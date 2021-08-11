@@ -8,4 +8,4 @@
     - name: Ansible create file with variable3
       copy:
         content: "{{ variable3 }}"
-        dest: "/root/playbook1.txt"
+        dest: "~/playbook1.txt"
