@@ -7,5 +7,5 @@
 
     - name: Ansible create file if it doesn't exist example
       file:
-        path: "/root/playbook2.txt"
+        path: "~/playbook2.txt"
         state: touch
