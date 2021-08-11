@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: playbook2
+      debug: msg="{{ variable2 }}"
+
+    - name: Ansible create file if it doesn't exist example
+      file:
+        path: "/root/playbook2.txt"
+        state: touch
