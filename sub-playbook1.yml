@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: playbook1
+      debug: msg="{{ variable1 }}"
+    
+    - name: Ansible create file with variable3
+      copy:
+        content: "{{ variable3 }}"
+        dest: "/root/playbook1.txt"
