@@ -1,0 +1,9 @@
+---
+# tasks file for sample-role-1
+    - name: role1
+      debug: msg="{{ variable1 }}"
+    
+    - name: Ansible create file with variable3
+      copy:
+        content: "{{ variable3 }}"
+        dest: "~/playbook1.txt"

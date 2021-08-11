@@ -1,0 +1,19 @@
+---
+- name: install mysql
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: role1
+      include_role:
+        name: "sample-role-1"
+      vars:
+        variable1: "{{ your_var1 }}"
+        variable3: "{{ your_var3 }}"
+      when: sample_condition == "role1"
+
+    - name: role2
+      include_role:
+        name: "sample-role-2"
+      vars:
+        variable2: "{{ your_var2 }}"
+      when: sample_condition == "role2"
