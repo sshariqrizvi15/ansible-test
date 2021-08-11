@@ -2,7 +2,7 @@
   #name: Create a database
 # Combine multiple playbooks
   - name: main playbook
-    hosts: all
+    hosts: localhost
 
   - name: Call Playbook1
     import_playbook: sub-playbook1.yml variable1="{{ your_var1 }}" variable3="{{ your_var3 }}"
